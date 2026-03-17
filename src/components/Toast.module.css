@@ -1,0 +1,40 @@
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 0.9rem 1.4rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  z-index: 1000;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.16);
+  max-width: 360px;
+  animation: slideUp 0.28s ease;
+}
+
+.icon { font-size: 1rem; flex-shrink: 0; }
+
+.success {
+  background: var(--navy);
+  color: var(--white);
+  border-left: 4px solid var(--success);
+}
+
+.error {
+  background: #fff0f0;
+  color: #c0392b;
+  border: 1px solid #fbc7c7;
+  border-left: 4px solid var(--error);
+}
+
+@keyframes slideUp {
+  from { transform: translateY(16px); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+
+@media (max-width: 500px) {
+  .toast { bottom: 1rem; right: 1rem; left: 1rem; max-width: 100%; }
+}

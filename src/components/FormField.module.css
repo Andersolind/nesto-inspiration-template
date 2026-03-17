@@ -1,0 +1,26 @@
+.field { display: flex; flex-direction: column; gap: 0.38rem; }
+
+.label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--navy);
+  letter-spacing: 0.025em;
+}
+
+.input {
+  background: var(--cream);
+  border: 1.5px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 0.7rem 0.9rem;
+  font-size: 0.9rem;
+  color: var(--navy);
+  transition: border-color var(--transition), background var(--transition);
+  outline: none;
+  width: 100%;
+}
+
+.input::placeholder { color: #b8c0cc; }
+.input:focus { border-color: var(--navy); background: var(--white); }
+.input.hasError { border-color: var(--error); background: #fff8f8; }
+
+.error { font-size: 0.74rem; color: var(--error); font-weight: 500; }
