@@ -10,7 +10,7 @@ const BASE_URL = 'https://nesto-fe-exam.vercel.app/api'
 const DEFAULT_HEADERS: Record<string, string> = {
   Accept: 'application/json',
   'Content-Type': 'application/json',
-  'x-nesto-candidat': 'Anders Lind',
+  'x-nesto-candidat': 'Bob Barker',
 }
 
 class ApiError extends Error {
